@@ -12,11 +12,12 @@ This application was developed using the following technology stack:
 
 ## How the Application Works
 
-1. To run the application in a local development environment, use the following commands:
+To run the application in a local development environment, use the following commands:
 
    ```bash
    npm install
    npm run dev
+   ```
 This will start your Next.js application and run the development server.
 
 Create an Ably account and obtain your API keys.
