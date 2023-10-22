@@ -1,63 +1,30 @@
-# Ably serverless WebSockets and Next.js fundamentals starter kit
+# Real-Time Collaboration with Ably, Next.js, and Tailwind CSS
 
-![Ably serverless WebSockets and Next.js fundamentals starter kit demo](media/ably-nextjs.png)
+This application allows participants to work together to create a Tengram, with a focus on real-time collaboration. A Tengram is a geometric design formed by the combination of nine different triangle shapes.
 
-## Description
+## Technology Stack
 
-This [Ably](https://ably.com?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) and [Next.js](https://nextjs.org) fundamentals starter kit demonstrates using some of the Ably's core functionality with Next.js. You can build features and use cases upon these fundamentals such as notifications, activity streams, chat, realtime visualisations and dashboards, and collaborative multiplayer experiences.
+This application was developed using the following technology stack:
 
-The Ably fundamentals demonstrated within this repo are:
+- [Next.js](https://nextjs.org/): A React-based web application framework. It enables you to build and manage your pages quickly.
+- [Tailwind CSS](https://tailwindcss.com/): A fast and customizable CSS framework. It allows you to create your application's styles quickly.
+- [Ably](https://ably.com/): A real-time data communication platform that enables participants to receive and share instant updates.
 
-- [Token Authentication](https://ably.com/docs/realtime/authentication?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo#token-authentication) - authenticate and establish a persistent bi-direction connection to the Ably platform.
-- [Pub/Sub (Publish/Subscribe)](https://ably.com/docs/realtime/channels?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) - publish messages on channels and subscribe to channels to receive messages.
-- [Presence](https://ably.com/docs/realtime/presence?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) - keep track of devices that are present on a channel. This is great for tracking if a device is online or offline or indicating if a user is in a chat room when using Ably for Chat.
-- [History](https://ably.com/docs/realtime/history?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) - Retrieve a history of messages that have been published to a channel.
+## How the Application Works
 
-The project uses the following components:
+1. To run the application in a local development environment, use the following commands:
 
-- [Next.js](https://nextjs.org), a flexible React framework that gives you building blocks to create fast web applications.
-- [Ably](https://ably.com?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo), for realtime messaging at scale.
+   ```bash
+   npm install
+   npm run dev
+This will start your Next.js application and run the development server.
 
-## Building & running locally
+Create an Ably account and obtain your API keys.
 
-### Prerequisites
+Set your Ably API key in a single .env file as follows:
 
-1. [Sign up](https://ably.com/signup?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) or [log in](https://ably.com/login?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo) to ably.com, and [create a new app and copy the API key](https://faqs.ably.com/setting-up-and-managing-api-keys?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo).
-2. To deploy to [Vercel](https://vercel.com), create a Vercel account.
-
-### Configure the app
-
-Create a `.env.local` file with your Ably API key:
-
-```bash
-echo "ABLY_API_KEY={YOUR_ABLY_API_KEY_HERE}">.env
+```
+NEXT_PUBLIC_ABLY_API_KEY=<Your Ably API Key>
 ```
 
-### Run the Next.js app
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fably-labs%2Fably-nextjs-fundamentals-kit&env=ABLY_API_KEY)
-
-## Contributing
-
-Want to help contributing to this project? Have a look at our [contributing guide](CONTRIBUTING.md)!
-
-## More info
-
-- [Join the Ably Discord server](https://discord.gg/q89gDHZcBK)
-- [Follow Ably on Twitter](https://twitter.com/ablyrealtime)
-- [Use the Ably SDKs](https://github.com/ably/)
-- [Visit the Ably website](https://ably.com?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo)
-
----
-[![Ably logo](https://static.ably.dev/badge-black.svg?ably-nextjs-fundamentals-kit-github-repo)](https://ably.com?utm_source=github&utm_medium=github-repo&utm_campaign=GLB-2211-ably-nextjs-fundamentals-kit&utm_content=ably-nextjs-fundamentals-kit&src=GLB-2211-ably-nextjs-fundamentals-kit-github-repo)# tengram
-# tengram
+Participants can use the application to collaboratively create a Tengram. Any changes made are reflected to other participants in real-time.
