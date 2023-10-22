@@ -1,6 +1,5 @@
 import React from 'react';
 import './global.css';
-import Sidebar from '../components/Sidebar';
 import Link from 'next/link';
 
 const Home = () => {
